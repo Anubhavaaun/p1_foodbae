@@ -5,7 +5,7 @@ class Stopwatch {
 static int interval;
 static Timer timer;
 
-void watch() {
+void watch() {                                           //Session timeout
     Scanner sc = new Scanner(System.in);
     //System.out.print("Input seconds => : ");
     String secs = "20";
@@ -31,7 +31,7 @@ int setInterval() {
 }
 
 
-class menu {
+class menu {                                          //Menu
 
 void menu1(){
 Scanner in=new Scanner(System.in);
@@ -293,7 +293,7 @@ total=total+(arr[num-1]*qty);
 }
 
 
-System.out.println("1:home delivery or 2:self pick");
+System.out.println("1:home delivery or 2:self pick");      //Personal details
 int ent=in.nextInt();
 if(ent==1){
 System.out.println("Enter your name");
@@ -382,7 +382,7 @@ String name=in.next();
 System.out.println("enter your phone number");
 int nu=in.nextInt();
 }
-System.out.println("bill  "+total);
+System.out.println("bill  "+total);                     //Bill
 if(total>200){
 total=total-(int)(total*0.3);
 System.out.println("bill after discount  "+total);
@@ -391,7 +391,7 @@ System.out.println("bill after discount  "+total);
 System.out.println("");
 if(total>10){
 cancel=(int)(total*0.2);
-System.out.println("if you cancel your order cancellation charges will be"+":-"+cancel);
+System.out.println("if you cancel your order cancellation charges will be"+":-"+cancel);   //bill calculation
 System.out.println("");
 }
 }
@@ -411,7 +411,7 @@ void res(){
 int select=0;
 rest r=new rest();
 Scanner scan=new Scanner(System.in);
-System.out.println("Hello....Could you please tell your locality");
+System.out.println("Hello....Could you please tell your locality");  //locations
 System.out.println("1:Bidholi");
 System.out.println("2:Kandoli");
 System.out.println("3:Pondha");
@@ -422,7 +422,7 @@ switch(in){
 case 1:
 int s=1;
 while(s==1){
-System.out.println("Choose from where you want to order your dine");
+System.out.println("Choose from where you want to order your dine"); //resturants
 System.out.println("1:Chaupal Res ; Rating 4.0");
 System.out.println("Near Upes/Pizza Hub");
 	System.out.println("234111");
@@ -546,7 +546,7 @@ System.out.println("1.Cash or 2.E-wallet");
 int os=sh.nextInt();
 if(os==1)
 {
-System.out.println("Cash");
+System.out.println("Cash");         //Resources
 System.out.println("Your Order Will Be Delivered To You By 30 Minutes");
 System.out.println("");
 System.out.println("");
